@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Nomes</title>
+</head>
+<body>
+    <h1>Lista de Nomes</h1>
+    <form method="post">
+        <input type="text" name="nome" placeholder="Digite um nome">
+        <button type="submit">Adicionar</button>
+    </form>
+    <ul>
+        {% for nome in nomes %}
+            <li>{{ nome[1] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
